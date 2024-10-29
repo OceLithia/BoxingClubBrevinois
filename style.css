@@ -30,18 +30,20 @@ nav a:hover {
 }
 
 footer {
-  width: auto;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(128, 128, 128, 0.3);
   border-radius: 2vw;
   position: sticky;
+  height: 7vw;
 }
 
 footer img {
-  width: auto;
   border-radius: 4vw;
+  height: 5vw;
+  width: 100%;
 }
 
 h1 {

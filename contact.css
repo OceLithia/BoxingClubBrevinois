@@ -5,6 +5,7 @@
   text-align: center;
   gap: 3vw;
   width: 50vw;
+  font-family: "Russo One", sans-serif;
 }
 
 .contactus{
@@ -16,4 +17,27 @@
 legend{
   text-decoration: underline;
   font-size: 4vw;
+  color: rgb(165, 71, 42);
+}
+
+input, textarea {
+  background-color: rgb(180, 158, 117);
+  border-radius: 2vw;
+  font-size: 2vw;
+}
+
+button{
+  font-family: "Russo One", sans-serif;
+  border-radius: 1vw;
+  width: auto;
+  height: 3vw;
+  cursor: url("../BoxingClubBrevinois/images&logos/boxing-glove.png"), auto;
+}
+
+#submit{
+  background-color: rgba(122, 219, 122, 0.5);
+}
+
+#cancel{
+  background-color: rgba(161, 97, 97, 0.5);
 }
