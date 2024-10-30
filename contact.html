@@ -29,21 +29,20 @@
     </header>
     <main>
       <h1>BOXING CLUB Brévinois</h1>
-
       <section class="contactus">
       <form id="contact-form">
         <legend>Ecrivez-nous :</legend>
         <label for="name">Nom : </label>
-        <input type="text" id="name" placeholder="Votre nom"/>
+        <input type="text" id="name" placeholder="Votre nom" required/>
 
         <label for="surname">Prénom :</label>
-        <input type="text" id="surname" placeholder="Votre prénom"/>
+        <input type="text" id="surname" placeholder="Votre prénom" required/>
 
         <label for="mail">Adresse mail : </label>
-        <input type="email" id="mail" placeholder="Votre email"/>
+        <input type="email" id="mail" placeholder="Votre email" required/>
 
         <label for="msg">Votre message : </label>
-        <textarea name="user_msg" id="msg" placeholder="Que voulez-vous nous dire?"></textarea>
+        <textarea name="msgForm" id="msg" placeholder="Que voulez-vous nous dire?" required></textarea>
         <div class="contact-button">
           <button id="submit" type="submit">VALIDER</button>
           <button id="cancel" type="reset">ANNULER</button>
@@ -64,5 +63,6 @@
         </a>
       </div>
     </footer>
+    <script type="module" src="../BoxingClubBrevinois/JS/app.js"></script>
   </body>
 </html>
