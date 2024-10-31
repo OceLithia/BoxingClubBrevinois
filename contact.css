@@ -66,6 +66,7 @@ button {
   text-align: center;
   flex-wrap: wrap;
   font-family: "Russo One", sans-serif;
+  font-style: italic;
 }
 
 .hidden {
