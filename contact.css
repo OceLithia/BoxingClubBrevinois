@@ -57,3 +57,17 @@ button {
   color: rgba(54, 50, 50, 0.7);
   font-style: italic;
 }
+
+.error-message {
+  color: red;
+  font-size: 2vw;
+  margin-top: 0;
+  margin-bottom: 2vw;
+  text-align: center;
+  flex-wrap: wrap;
+  font-family: "Russo One", sans-serif;
+}
+
+.hidden {
+  display: none;
+}

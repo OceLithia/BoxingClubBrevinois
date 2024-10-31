@@ -34,15 +34,20 @@
         <legend>Ecrivez-nous :</legend>
         <label for="name">Nom : </label>
         <input type="text" id="name" placeholder="Votre nom" required/>
+        <div id="name-error" class="error-message hidden"></div>
 
         <label for="surname">Prénom :</label>
         <input type="text" id="surname" placeholder="Votre prénom" required/>
+        <div id="surname-error" class="error-message hidden"></div>
 
         <label for="mail">Adresse mail : </label>
         <input type="email" id="mail" placeholder="Votre email" required/>
+        <div id="mail-error" class="error-message hidden"></div>
 
         <label for="msg">Votre message : </label>
         <textarea name="msgForm" id="msg" placeholder="Que voulez-vous nous dire?" required></textarea>
+        <div id="msg-error" class="error-message hidden"></div>
+        
         <div class="contact-button">
           <button id="submit" type="submit">VALIDER</button>
           <button id="cancel" type="reset">ANNULER</button>

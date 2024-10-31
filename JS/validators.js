@@ -72,3 +72,52 @@ function validateField(input) {
 
   return isValid;
 }
+
+// initialisation du formulaire avec validation champ par champ
+export function initForm() {
+  const $signupForm = document.getElementById("contact-form");
+
+  // `blur` à chaque champ pour la validation en tps reel
+  const $inputs = $signupForm.querySelectorAll("input");
+  for (const input of $inputs) {
+    input.addEventListener("blur", function () {
+      validateField(input);
+    });
+  }
+
+  // check complet du formulaire quand on utilise "valider"
+  $signupForm.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    let formIsValid = true;
+    for (const input of $inputs) {
+      const isValid = validateField(input);
+      if (!isValid) {
+        formIsValid = false;
+      }
+    }
+
+    if (formIsValid) {
+      const user = {
+        name: document.getElementById("name").value,
+        surname: document.getElementById("surname").value,
+        mail: document.getElementById("mail").value,
+        msg: document.getElementById("msg").value,
+      };
+
+      localStorage.setItem("userData", JSON.stringify(user));
+
+      alert("Inscription validée!");
+      console.log("Inscriptions : ");
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        console.log(`Clé:${key}, Valeur: ${value}`);
+      }
+
+      //reset formulaire
+      $signupForm.reset();
+    }
+  });
+}
+document.addEventListener("DOMContentLoaded", initForm);
